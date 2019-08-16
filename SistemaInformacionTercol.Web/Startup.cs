@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using SistemaInformacionTercol.Web.Data;
 using SistemaInformacionTercol.Web.Models;
 
 namespace SistemaInformacionTercol.Web
@@ -38,6 +39,7 @@ namespace SistemaInformacionTercol.Web
                 cfg.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
 
+            services.AddTransient<SeedDb>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             
 
