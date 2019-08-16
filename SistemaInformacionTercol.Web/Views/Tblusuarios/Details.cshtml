@@ -1,0 +1,48 @@
+﻿@model SistemaInformacionTercol.Web.Models.Tblusuarios
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Tblusuarios</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Idperfil)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Idperfil)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Strlogin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Strlogin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Strdescripcion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Strdescripcion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Idusuario">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
