@@ -16,9 +16,9 @@ namespace SistemaInformacionTercol.Web.Helpers
 
         Task<bool> IsUserInRoleAsync(Tblusuarios Usuario, string Perfil);
 
-        //Task<SignInResult> LoginAsync(LoginViewModel model);
+        Task<SignInResult> LoginAsync(LoginViewModel model);
 
-        //Task LogoutAsync();
+        Task LogoutAsync();
     }
 
 }

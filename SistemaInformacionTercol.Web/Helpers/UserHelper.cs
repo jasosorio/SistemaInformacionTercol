@@ -55,14 +55,14 @@ namespace SistemaInformacionTercol.Web.Helpers
             return await _userManager.IsInRoleAsync(Usuario, Perfil);
         }
 
-        /*public async Task<SignInResult> LoginAsync(LoginViewModel model)
+        public async Task<SignInResult> LoginAsync(LoginViewModel model)
         {
             return await _signInManager.PasswordSignInAsync(
-                model.Username,
-                model.Password,
-                model.RememberMe,
+                model.Usuario,
+                model.Contraseña,
+                model.Recordarme,
                 false);
-        }*/
+        }
 
         public async Task LogoutAsync()
         {
