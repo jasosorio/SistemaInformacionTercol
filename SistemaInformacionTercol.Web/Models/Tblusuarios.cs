@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace SistemaInformacionTercol.Web.Models
 {
-    public partial class Tblusuarios
+    public partial class Tblusuarios 
     {
         //TODO Poner required
         [Display(Name = "ID")]

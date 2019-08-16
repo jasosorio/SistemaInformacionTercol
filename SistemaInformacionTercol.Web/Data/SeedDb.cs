@@ -1,4 +1,5 @@
-﻿using SistemaInformacionTercol.Web.Models;
+﻿using SistemaInformacionTercol.Web.Helpers;
+using SistemaInformacionTercol.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,19 +17,37 @@ namespace SistemaInformacionTercol.Web.Data
             IUserHelper userHelper*/)
         {
             _context = context;
-           // _userHelper = userHelper;
+            //_userHelper = userHelper;
         }
 
         public async Task SeedAsync()
         {
             await _context.Database.EnsureCreatedAsync();
-           // await CheckRoles();
+            /*await CheckRoles();
+            await CheckPropertyTypesAsync();
+            await CheckPropertiesAsync();
+            await CheckContractsAsync();
 
         }
 
-        /*private async Task CheckRoles()
+        private Task CheckPropertyTypesAsync()
         {
-            await _userHelper.CheckRoleAsync("Manager");
-        }*/
+            throw new NotImplementedException();
+        }
+
+        private Task CheckPropertiesAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        private Task CheckContractsAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        private async Task CheckRoles()
+        {
+            await _userHelper.CheckRoleAsync("Manager");*/
+        }
     }   
 }
